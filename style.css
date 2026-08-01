@@ -1,177 +1,79 @@
-/* ========= COMPACT MOBILE DESIGN ========= */
-
-body{
-    padding:8px;
-}
-
-.wrapper{
-    width:100%;
-    max-width:360px;
-    margin:auto;
-}
-
 .card{
-    width:100%;
-    padding:16px 14px;
-    border-radius:20px;
+    padding:22px 18px;
 }
-
-/* Logo */
 
 .logo-box{
-    margin-bottom:10px;
+    margin-bottom:16px;
 }
 
 .logo-box img{
-    width:82px;
-    height:82px;
-    border-radius:50%;
-    box-shadow:0 0 10px rgba(25,212,255,.30);
+    width:105px;
+    height:105px;
 }
-
-/* Heading */
 
 h1{
-    font-size:20px;
+    font-size:24px;
     font-weight:700;
-    margin-bottom:10px;
-    line-height:1.2;
+    margin-bottom:16px;
 }
 
-/* Features */
-
 .feature{
-    gap:8px;
-    padding:6px 0;
+    padding:10px 0;
+    gap:12px;
 }
 
 .feature span{
-    width:18px;
-    font-size:15px;
+    font-size:18px;
+    width:24px;
 }
 
 .feature p{
-    font-size:12px;
-    line-height:1.25;
+    font-size:14px;
+    line-height:1.4;
 }
 
 .line{
-    margin-left:26px;
+    margin-left:36px;
 }
-
-/* Subtitle */
 
 .subtitle{
-    margin:12px 0;
-    font-size:11px;
-    line-height:1.4;
-}
-
-/* Join Button */
-
-.join-btn{
-    height:44px;
-    font-size:15px;
-    border-radius:30px;
-    margin-top:4px;
-}
-
-/* Quote */
-
-.quote{
-    margin:12px 0;
-    font-size:11px;
-    line-height:1.4;
-}
-
-/* Agency Box */
-
-.agency{
-    padding:9px;
-    font-size:10px;
-}
-
-.agency strong{
     font-size:13px;
-}
-
-/* Footer */
-
-.footer-links{
-    margin-top:12px;
-    gap:10px;
-}
-
-.footer-links a{
-    font-size:9px;
-}
-
-.disclaimer{
-    margin-top:6px;
-    font-size:8px;
-    line-height:1.4;
-}
-
-/* Mobile */
-
-@media(max-width:390px){
-
-.wrapper{
-    max-width:340px;
-}
-
-.card{
-    padding:14px 12px;
-}
-
-.logo-box img{
-    width:78px;
-    height:78px;
-}
-
-h1{
-    font-size:18px;
-}
-
-.feature{
-    padding:5px 0;
-}
-
-.feature span{
-    font-size:14px;
-}
-
-.feature p{
-    font-size:11px;
-}
-
-.subtitle{
-    font-size:10px;
+    margin:18px 0;
+    line-height:1.5;
 }
 
 .join-btn{
-    height:42px;
-    font-size:14px;
+    height:52px;
+    font-size:18px;
+    border-radius:30px;
 }
 
 .quote{
-    font-size:10px;
+    margin:18px 0;
+    font-size:13px;
+    line-height:1.6;
 }
 
 .agency{
-    font-size:9px;
-}
-
-.agency strong{
+    padding:12px;
     font-size:12px;
 }
 
+.agency strong{
+    font-size:16px;
+}
+
+.footer-links{
+    margin-top:18px;
+    gap:12px;
+}
+
 .footer-links a{
-    font-size:8px;
+    font-size:11px;
 }
 
 .disclaimer{
-    font-size:7px;
-}
-
+    margin-top:10px;
+    font-size:10px;
+    line-height:1.4;
 }
