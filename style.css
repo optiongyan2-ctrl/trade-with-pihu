@@ -1,7 +1,6 @@
-/* ==========================================
-   TRADE WITH PIHU - FINAL CSS
-   PART 1
-========================================== */
+/* ===================================================
+   TRADE WITH PIHU - FINAL CSS (PART 1)
+=================================================== */
 
 *{
     margin:0;
@@ -14,139 +13,100 @@ html{
 }
 
 body{
-
     font-family:'Poppins',sans-serif;
-
-    background:#05080d;
-
+    background:#05080D;
     color:#ffffff;
-
-    padding:8px;
-
+    padding:10px;
 }
 
 .wrapper{
-
     width:100%;
-
-    max-width:340px;
-
-    margin:10px auto;
-
+    max-width:350px;
+    margin:0 auto;
 }
 
 .card{
-
-    background:#09131c;
-
-    border:2px solid #18d4ff;
-
-    border-radius:18px;
-
-    padding:12px;
-
+    background:#0A121C;
+    border:2px solid #19D4FF;
+    border-radius:20px;
+    padding:18px 16px;
     box-shadow:
-    0 0 10px rgba(24,212,255,.25);
-
+    0 0 18px rgba(25,212,255,.22);
 }
 
+/* =======================
+   LOGO
+======================= */
+
 .logo-box{
-
     display:flex;
-
     justify-content:center;
-
-    margin-bottom:8px;
-
+    margin-bottom:12px;
 }
 
 .logo-box img{
-
-    width:74px;
-
-    height:74px;
-
-    border-radius:50%;
-
+    width:85px;
+    height:85px;
     object-fit:cover;
-
-    border:3px solid #18d4ff;
-
+    border-radius:50%;
+    border:3px solid #19D4FF;
     box-shadow:
-    0 0 8px rgba(24,212,255,.30);
-
+    0 0 12px rgba(25,212,255,.35);
 }
+
+/* =======================
+   HEADING
+======================= */
 
 h1{
-
     text-align:center;
-
-    font-size:18px;
-
+    font-size:22px;
     font-weight:700;
-
-    margin-bottom:8px;
-
     letter-spacing:.4px;
-
+    margin-bottom:14px;
 }
 
+/* =======================
+   FEATURES
+======================= */
+
 .feature{
-
     display:flex;
-
     align-items:center;
-
-    gap:7px;
-
-    padding:4px 0;
-
+    gap:10px;
+    padding:8px 0;
 }
 
 .feature span{
-
-    width:16px;
-
+    width:22px;
     text-align:center;
-
-    font-size:13px;
-
+    font-size:16px;
 }
 
 .feature p{
-
-    font-size:11px;
-
-    line-height:1.25;
-
-    color:#edf5fc;
-
+    flex:1;
+    font-size:13px;
+    line-height:1.35;
+    color:#EEF4FB;
     font-weight:500;
-
 }
 
 .line{
-
     height:1px;
-
-    background:#24333e;
-
-    margin-left:23px;
-
+    margin-left:30px;
+    background:rgba(255,255,255,.08);
 }
 
+/* =======================
+   SUBTITLE
+======================= */
+
 .subtitle{
-
     text-align:center;
-
-    color:#d8dde5;
-
-    font-size:10px;
-
-    line-height:1.45;
-
-    margin:10px 0;
-
+    color:#D7DDE5;
+    font-size:12px;
+    line-height:1.5;
+    margin:16px 0;
 }
 
 /* ==========================================
@@ -159,21 +119,21 @@ h1{
     justify-content:center;
     align-items:center;
     width:100%;
-    height:40px;
-    border-radius:24px;
-    overflow:hidden;
+    height:50px;
+    border-radius:30px;
     text-decoration:none;
+    overflow:hidden;
     color:#fff;
-    font-size:13px;
+    font-size:16px;
     font-weight:700;
-    background:linear-gradient(90deg,#14c8ff,#7d45ff);
-    box-shadow:0 4px 12px rgba(20,200,255,.30);
-    transition:.30s ease;
+    background:linear-gradient(90deg,#18D4FF,#7B42FF);
+    box-shadow:0 8px 20px rgba(24,212,255,.28);
+    transition:.35s ease;
 }
 
 .join-btn:hover{
     transform:translateY(-2px);
-    box-shadow:0 8px 18px rgba(20,200,255,.45);
+    box-shadow:0 12px 28px rgba(24,212,255,.45);
 }
 
 .join-btn:active{
@@ -185,7 +145,7 @@ h1{
     position:absolute;
     top:0;
     left:-120%;
-    width:40%;
+    width:45%;
     height:100%;
     background:linear-gradient(
         90deg,
@@ -198,196 +158,152 @@ h1{
 }
 
 @keyframes shine{
-
-0%{
-left:-120%;
+    from{left:-120%;}
+    to{left:160%;}
 }
 
-100%{
-left:160%;
-}
-
-}
-
-/* ==========================================
+/* =======================
    QUOTE
-========================================== */
+======================= */
 
 .quote{
-
     text-align:center;
-
-    margin:10px 0;
-
-    font-size:9px;
-
-    line-height:1.4;
-
-    color:#ededed;
-
+    margin:16px 0;
+    font-size:12px;
+    line-height:1.55;
+    color:#ECECEC;
 }
 
-/* ==========================================
+/* =======================
    AGENCY
-========================================== */
+======================= */
 
 .agency{
-
-    padding:7px;
-
-    border:1px solid rgba(24,212,255,.20);
-
-    border-radius:10px;
-
+    border:1px solid rgba(25,212,255,.22);
+    border-radius:14px;
+    padding:12px;
     text-align:center;
-
-    font-size:8px;
-
-    color:#d9dde3;
-
+    font-size:11px;
+    color:#D6DDE5;
 }
 
 .agency strong{
-
     display:block;
-
-    margin-top:4px;
-
-    color:#18d4ff;
-
-    font-size:11px;
-
+    margin-top:6px;
+    font-size:15px;
+    color:#19D4FF;
 }
 
-/* ==========================================
+/* =======================
    FOOTER
-========================================== */
+======================= */
 
 .footer-links{
-
-    margin-top:8px;
-
     display:flex;
-
     justify-content:center;
-
-    gap:8px;
-
+    gap:14px;
+    margin-top:16px;
     flex-wrap:wrap;
-
 }
 
 .footer-links a{
-
+    color:#9AA5B0;
     text-decoration:none;
+    font-size:11px;
+}
 
-    color:#9aa5b0;
-
-    font-size:7px;
-
+.footer-links a:hover{
+    color:#19D4FF;
 }
 
 .disclaimer{
-
-    margin-top:5px;
-
     text-align:center;
-
-    color:#727d88;
-
-    font-size:6px;
-
-    line-height:1.4;
-
+    margin-top:10px;
+    color:#6F7B87;
+    font-size:9px;
+    line-height:1.5;
 }
 
-/* ==========================================
+/* =======================
    MOBILE
-========================================== */
+======================= */
 
 @media (max-width:390px){
 
 body{
-    padding:6px;
+    padding:8px;
 }
 
 .wrapper{
-    max-width:330px;
+    max-width:340px;
 }
 
 .card{
-    padding:10px;
-    border-radius:16px;
-}
-
-.logo-box{
-    margin-bottom:6px;
+    padding:15px 14px;
 }
 
 .logo-box img{
-    width:68px;
-    height:68px;
+    width:78px;
+    height:78px;
 }
 
 h1{
-    font-size:16px;
-    margin-bottom:6px;
+    font-size:20px;
+    margin-bottom:12px;
 }
 
 .feature{
-    gap:6px;
-    padding:3px 0;
+    gap:8px;
+    padding:6px 0;
 }
 
 .feature span{
-    width:15px;
-    font-size:12px;
+    width:18px;
+    font-size:15px;
 }
 
 .feature p{
-    font-size:10px;
-    line-height:1.2;
-}
-
-.line{
-    margin-left:21px;
-}
-
-.subtitle{
-    font-size:9px;
-    margin:8px 0;
-}
-
-.join-btn{
-    height:38px;
     font-size:12px;
 }
 
+.line{
+    margin-left:26px;
+}
+
+.subtitle{
+    font-size:11px;
+    margin:14px 0;
+}
+
+.join-btn{
+    height:46px;
+    font-size:15px;
+}
+
 .quote{
-    font-size:8px;
-    margin:8px 0;
+    font-size:11px;
+    margin:14px 0;
 }
 
 .agency{
-    padding:6px;
-    font-size:7px;
-}
-
-.agency strong{
+    padding:10px;
     font-size:10px;
 }
 
+.agency strong{
+    font-size:14px;
+}
+
 .footer-links{
-    margin-top:6px;
+    gap:10px;
 }
 
 .footer-links a{
-    font-size:6px;
+    font-size:10px;
 }
 
 .disclaimer{
-    font-size:5px;
-    margin-top:4px;
+    font-size:8px;
 }
 
 }
