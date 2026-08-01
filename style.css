@@ -1,3 +1,8 @@
+/* ==========================================
+   TRADE WITH PIHU - FINAL CSS
+   PART 1
+========================================== */
+
 *{
     margin:0;
     padding:0;
@@ -9,178 +14,142 @@ html{
 }
 
 body{
+
     font-family:'Poppins',sans-serif;
+
     background:#05080d;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:20px;
+
+    color:#ffffff;
+
+    padding:8px;
+
 }
 
 .wrapper{
+
     width:100%;
-    max-width:420px;
+
+    max-width:340px;
+
+    margin:10px auto;
+
 }
 
 .card{
-    width:100%;
+
     background:#09131c;
-    border:2px solid #19d4ff;
-    border-radius:28px;
-    padding:28px 22px;
-    box-shadow:0 0 18px rgba(25,212,255,.35);
+
+    border:2px solid #18d4ff;
+
+    border-radius:18px;
+
+    padding:12px;
+
+    box-shadow:
+    0 0 10px rgba(24,212,255,.25);
+
 }
 
 .logo-box{
+
     display:flex;
+
     justify-content:center;
-    margin-bottom:20px;
+
+    margin-bottom:8px;
+
 }
 
 .logo-box img{
-    width:125px;
-    height:125px;
+
+    width:74px;
+
+    height:74px;
+
     border-radius:50%;
-    border:4px solid #19d4ff;
+
     object-fit:cover;
-    box-shadow:0 0 20px rgba(25,212,255,.45);
+
+    border:3px solid #18d4ff;
+
+    box-shadow:
+    0 0 8px rgba(24,212,255,.30);
+
 }
 
 h1{
+
     text-align:center;
-    font-size:30px;
+
+    font-size:18px;
+
     font-weight:700;
-    letter-spacing:.5px;
-    margin-bottom:22px;
+
+    margin-bottom:8px;
+
+    letter-spacing:.4px;
+
 }
 
 .feature{
+
     display:flex;
+
     align-items:center;
-    gap:14px;
-    padding:13px 0;
+
+    gap:7px;
+
+    padding:4px 0;
+
 }
 
 .feature span{
-    font-size:22px;
-    width:28px;
+
+    width:16px;
+
     text-align:center;
+
+    font-size:13px;
+
 }
 
 .feature p{
-    font-size:16px;
+
+    font-size:11px;
+
+    line-height:1.25;
+
+    color:#edf5fc;
+
     font-weight:500;
-    color:#eef4fb;
+
 }
 
 .line{
+
     height:1px;
-    background:rgba(255,255,255,.08);
-    margin-left:42px;
+
+    background:#24333e;
+
+    margin-left:23px;
+
 }
 
 .subtitle{
+
     text-align:center;
-    font-size:15px;
-    color:#d7dde6;
-    line-height:1.7;
-    margin:24px 0;
-}
 
-.join-btn{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:100%;
-    height:58px;
-    border-radius:40px;
-    text-decoration:none;
-    color:#fff;
-    font-size:21px;
-    font-weight:700;
-    background:linear-gradient(90deg,#18d4ff,#7b4dff);
-    transition:.3s;
-}
+    color:#d8dde5;
 
-.join-btn:hover{
-    transform:translateY(-2px);
-    box-shadow:0 0 18px rgba(24,212,255,.45);
-}
+    font-size:10px;
 
-.quote{
-    margin:24px 0;
-    text-align:center;
-    font-size:15px;
-    line-height:1.8;
-    color:#ececec;
-}
+    line-height:1.45;
 
-.agency{
-    text-align:center;
-    padding:15px;
-    border:1px solid rgba(25,212,255,.25);
-    border-radius:16px;
-    color:#d6dce4;
-    font-size:14px;
-}
+    margin:10px 0;
 
-.agency strong{
-    display:block;
-    margin-top:8px;
-    color:#19d4ff;
-    font-size:18px;
-}
-
-.footer-links{
-    display:flex;
-    justify-content:center;
-    gap:16px;
-    margin-top:24px;
-    flex-wrap:wrap;
-}
-
-.footer-links a{
-    color:#9aa5b1;
-    text-decoration:none;
-    font-size:13px;
-}
-
-.footer-links a:hover{
-    color:#19d4ff;
-}
-
-.disclaimer{
-    text-align:center;
-    margin-top:14px;
-    color:#798391;
-    font-size:11px;
-    line-height:1.6;
-}
-
-@media(max-width:400px){
-
-.card{
-    padding:24px 18px;
-}
-
-.logo-box img{
-    width:110px;
-    height:110px;
-}
-
-h1{
-    font-size:27px;
-}
-
-.feature p{
-    font-size:15px;
-}
-
-.subtitle{
-    font-size:14px;
-}
+}/* ==========================================
+   JOIN BUTTON
+========================================== */
 
 .join-btn{
     position:relative;
@@ -188,25 +157,21 @@ h1{
     justify-content:center;
     align-items:center;
     width:100%;
-    height:60px;
-    border-radius:50px;
+    height:40px;
+    border-radius:24px;
     overflow:hidden;
     text-decoration:none;
-    font-size:21px;
-    font-weight:700;
     color:#fff;
-    background:linear-gradient(90deg,#00C6FF,#7F3DFF);
-    box-shadow:
-    0 8px 25px rgba(0,198,255,.35),
-    0 0 20px rgba(0,198,255,.25);
-    transition:all .35s ease;
+    font-size:13px;
+    font-weight:700;
+    background:linear-gradient(90deg,#14c8ff,#7d45ff);
+    box-shadow:0 4px 12px rgba(20,200,255,.30);
+    transition:.30s ease;
 }
 
 .join-btn:hover{
-    transform:translateY(-4px) scale(1.03);
-    box-shadow:
-    0 15px 35px rgba(0,198,255,.55),
-    0 0 35px rgba(0,198,255,.45);
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(20,200,255,.45);
 }
 
 .join-btn:active{
@@ -218,7 +183,7 @@ h1{
     position:absolute;
     top:0;
     left:-120%;
-    width:60%;
+    width:40%;
     height:100%;
     background:linear-gradient(
         90deg,
@@ -227,26 +192,200 @@ h1{
         transparent
     );
     transform:skewX(-25deg);
-    animation:shine 2.8s infinite;
+    animation:shine 2.8s linear infinite;
 }
 
 @keyframes shine{
 
-    0%{
-        left:-120%;
-    }
+0%{
+left:-120%;
+}
 
-    100%{
-        left:160%;
-    }
+100%{
+left:160%;
+}
 
 }
+
+/* ==========================================
+   QUOTE
+========================================== */
+
 .quote{
-    font-size:14px;
+
+    text-align:center;
+
+    margin:10px 0;
+
+    font-size:9px;
+
+    line-height:1.4;
+
+    color:#ededed;
+
+}
+
+/* ==========================================
+   AGENCY
+========================================== */
+
+.agency{
+
+    padding:7px;
+
+    border:1px solid rgba(24,212,255,.20);
+
+    border-radius:10px;
+
+    text-align:center;
+
+    font-size:8px;
+
+    color:#d9dde3;
+
 }
 
 .agency strong{
-    font-size:17px;
+
+    display:block;
+
+    margin-top:4px;
+
+    color:#18d4ff;
+
+    font-size:11px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer-links{
+
+    margin-top:8px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#9aa5b0;
+
+    font-size:7px;
+
+}
+
+.disclaimer{
+
+    margin-top:5px;
+
+    text-align:center;
+
+    color:#727d88;
+
+    font-size:6px;
+
+    line-height:1.4;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:390px){
+
+body{
+    padding:6px;
+}
+
+.wrapper{
+    max-width:330px;
+}
+
+.card{
+    padding:10px;
+    border-radius:16px;
+}
+
+.logo-box{
+    margin-bottom:6px;
+}
+
+.logo-box img{
+    width:68px;
+    height:68px;
+}
+
+h1{
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.feature{
+    gap:6px;
+    padding:3px 0;
+}
+
+.feature span{
+    width:15px;
+    font-size:12px;
+}
+
+.feature p{
+    font-size:10px;
+    line-height:1.2;
+}
+
+.line{
+    margin-left:21px;
+}
+
+.subtitle{
+    font-size:9px;
+    margin:8px 0;
+}
+
+.join-btn{
+    height:38px;
+    font-size:12px;
+}
+
+.quote{
+    font-size:8px;
+    margin:8px 0;
+}
+
+.agency{
+    padding:6px;
+    font-size:7px;
+}
+
+.agency strong{
+    font-size:10px;
+}
+
+.footer-links{
+    margin-top:6px;
+}
+
+.footer-links a{
+    font-size:6px;
+}
+
+.disclaimer{
+    font-size:5px;
+    margin-top:4px;
 }
 
 }
