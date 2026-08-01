@@ -1,391 +1,177 @@
-/* ==========================================
-   TRADE WITH PIHU - FINAL CSS
-   PART 1
-========================================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
+/* ========= COMPACT MOBILE DESIGN ========= */
 
 body{
-
-    font-family:'Poppins',sans-serif;
-
-    background:#05080d;
-
-    color:#ffffff;
-
     padding:8px;
-
 }
 
 .wrapper{
-
     width:100%;
-
-    max-width:340px;
-
-    margin:10px auto;
-
+    max-width:360px;
+    margin:auto;
 }
 
 .card{
-
-    background:#09131c;
-
-    border:2px solid #18d4ff;
-
-    border-radius:18px;
-
-    padding:12px;
-
-    box-shadow:
-    0 0 10px rgba(24,212,255,.25);
-
+    width:100%;
+    padding:16px 14px;
+    border-radius:20px;
 }
 
+/* Logo */
+
 .logo-box{
-
-    display:flex;
-
-    justify-content:center;
-
-    margin-bottom:8px;
-
+    margin-bottom:10px;
 }
 
 .logo-box img{
-
-    width:74px;
-
-    height:74px;
-
+    width:82px;
+    height:82px;
     border-radius:50%;
-
-    object-fit:cover;
-
-    border:3px solid #18d4ff;
-
-    box-shadow:
-    0 0 8px rgba(24,212,255,.30);
-
+    box-shadow:0 0 10px rgba(25,212,255,.30);
 }
+
+/* Heading */
 
 h1{
-
-    text-align:center;
-
-    font-size:18px;
-
+    font-size:20px;
     font-weight:700;
-
-    margin-bottom:8px;
-
-    letter-spacing:.4px;
-
-}
-
-.feature{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:7px;
-
-    padding:4px 0;
-
-}
-
-.feature span{
-
-    width:16px;
-
-    text-align:center;
-
-    font-size:13px;
-
-}
-
-.feature p{
-
-    font-size:11px;
-
-    line-height:1.25;
-
-    color:#edf5fc;
-
-    font-weight:500;
-
-}
-
-.line{
-
-    height:1px;
-
-    background:#24333e;
-
-    margin-left:23px;
-
-}
-
-.subtitle{
-
-    text-align:center;
-
-    color:#d8dde5;
-
-    font-size:10px;
-
-    line-height:1.45;
-
-    margin:10px 0;
-
-}/* ==========================================
-   JOIN BUTTON
-========================================== */
-
-.join-btn{
-    position:relative;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:100%;
-    height:40px;
-    border-radius:24px;
-    overflow:hidden;
-    text-decoration:none;
-    color:#fff;
-    font-size:13px;
-    font-weight:700;
-    background:linear-gradient(90deg,#14c8ff,#7d45ff);
-    box-shadow:0 4px 12px rgba(20,200,255,.30);
-    transition:.30s ease;
-}
-
-.join-btn:hover{
-    transform:translateY(-2px);
-    box-shadow:0 8px 18px rgba(20,200,255,.45);
-}
-
-.join-btn:active{
-    transform:scale(.97);
-}
-
-.join-btn::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:-120%;
-    width:40%;
-    height:100%;
-    background:linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,.45),
-        transparent
-    );
-    transform:skewX(-25deg);
-    animation:shine 2.8s linear infinite;
-}
-
-@keyframes shine{
-
-0%{
-left:-120%;
-}
-
-100%{
-left:160%;
-}
-
-}
-
-/* ==========================================
-   QUOTE
-========================================== */
-
-.quote{
-
-    text-align:center;
-
-    margin:10px 0;
-
-    font-size:9px;
-
-    line-height:1.4;
-
-    color:#ededed;
-
-}
-
-/* ==========================================
-   AGENCY
-========================================== */
-
-.agency{
-
-    padding:7px;
-
-    border:1px solid rgba(24,212,255,.20);
-
-    border-radius:10px;
-
-    text-align:center;
-
-    font-size:8px;
-
-    color:#d9dde3;
-
-}
-
-.agency strong{
-
-    display:block;
-
-    margin-top:4px;
-
-    color:#18d4ff;
-
-    font-size:11px;
-
-}
-
-/* ==========================================
-   FOOTER
-========================================== */
-
-.footer-links{
-
-    margin-top:8px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:8px;
-
-    flex-wrap:wrap;
-
-}
-
-.footer-links a{
-
-    text-decoration:none;
-
-    color:#9aa5b0;
-
-    font-size:7px;
-
-}
-
-.disclaimer{
-
-    margin-top:5px;
-
-    text-align:center;
-
-    color:#727d88;
-
-    font-size:6px;
-
-    line-height:1.4;
-
-}
-
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media (max-width:390px){
-
-body{
-    padding:6px;
-}
-
-.wrapper{
-    max-width:330px;
-}
-
-.card{
-    padding:10px;
-    border-radius:16px;
-}
-
-.logo-box{
-    margin-bottom:6px;
-}
-
-.logo-box img{
-    width:68px;
-    height:68px;
-}
-
-h1{
-    font-size:16px;
-    margin-bottom:6px;
-}
-
-.feature{
-    gap:6px;
-    padding:3px 0;
-}
-
-.feature span{
-    width:15px;
-    font-size:12px;
-}
-
-.feature p{
-    font-size:10px;
+    margin-bottom:10px;
     line-height:1.2;
 }
 
-.line{
-    margin-left:21px;
+/* Features */
+
+.feature{
+    gap:8px;
+    padding:6px 0;
 }
+
+.feature span{
+    width:18px;
+    font-size:15px;
+}
+
+.feature p{
+    font-size:12px;
+    line-height:1.25;
+}
+
+.line{
+    margin-left:26px;
+}
+
+/* Subtitle */
 
 .subtitle{
-    font-size:9px;
-    margin:8px 0;
+    margin:12px 0;
+    font-size:11px;
+    line-height:1.4;
 }
+
+/* Join Button */
 
 .join-btn{
-    height:38px;
-    font-size:12px;
+    height:44px;
+    font-size:15px;
+    border-radius:30px;
+    margin-top:4px;
 }
+
+/* Quote */
 
 .quote{
-    font-size:8px;
-    margin:8px 0;
+    margin:12px 0;
+    font-size:11px;
+    line-height:1.4;
 }
+
+/* Agency Box */
 
 .agency{
-    padding:6px;
-    font-size:7px;
-}
-
-.agency strong{
+    padding:9px;
     font-size:10px;
 }
 
+.agency strong{
+    font-size:13px;
+}
+
+/* Footer */
+
 .footer-links{
-    margin-top:6px;
+    margin-top:12px;
+    gap:10px;
 }
 
 .footer-links a{
-    font-size:6px;
+    font-size:9px;
 }
 
 .disclaimer{
-    font-size:5px;
-    margin-top:4px;
+    margin-top:6px;
+    font-size:8px;
+    line-height:1.4;
+}
+
+/* Mobile */
+
+@media(max-width:390px){
+
+.wrapper{
+    max-width:340px;
+}
+
+.card{
+    padding:14px 12px;
+}
+
+.logo-box img{
+    width:78px;
+    height:78px;
+}
+
+h1{
+    font-size:18px;
+}
+
+.feature{
+    padding:5px 0;
+}
+
+.feature span{
+    font-size:14px;
+}
+
+.feature p{
+    font-size:11px;
+}
+
+.subtitle{
+    font-size:10px;
+}
+
+.join-btn{
+    height:42px;
+    font-size:14px;
+}
+
+.quote{
+    font-size:10px;
+}
+
+.agency{
+    font-size:9px;
+}
+
+.agency strong{
+    font-size:12px;
+}
+
+.footer-links a{
+    font-size:8px;
+}
+
+.disclaimer{
+    font-size:7px;
 }
 
 }
